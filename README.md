@@ -33,6 +33,6 @@ akkio.add_rows_to_dataset(new_dataset['dataset_id'], rows)
 
 new_model = akkio.create_model(new_dataset['dataset_id'], ['y'], [], {'duration': 1})
 print(new_model)
-prediction = akkio.make_prediction(new_model['model_id'], [{'x': 0.1}, {'x':0.7}])
+prediction = akkio.make_prediction(new_model['model_id'], [{'x': 0.1}, {'x':0.7}], explain=True)
 print(prediction)
 ```

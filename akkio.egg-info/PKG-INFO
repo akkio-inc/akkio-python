@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: akkio
-Version: 1.0.1
+Version: 1.0.2
 Summary: Convenient access to the Akkio API from python
 Home-page: https://github.com/akkio-inc/akkio-python
 Author: Abraham Parangi

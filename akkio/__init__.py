@@ -1,6 +1,7 @@
 import requests
 
 api_key = None
+
 url = 'api.akk.io'
 version = 'v1'
 protocol = 'https'
@@ -61,9 +62,10 @@ def create_model(id, predict_fields, ignore_fields=[], params=None):
     request_params.update(params)
   return requests.post('{}://{}:{}/{}/models'.format(protocol, url, port, version), json=request_params).json()
 
-def make_prediction(id, data):
+def make_prediction(id, data, explain=False):
   return requests.post('{}://{}:{}/{}/models'.format(protocol, url, port, version), json={
     'api_key': api_key,
     'id': id,
-    'data': data
+    'data': data,
+    'explain': explain
   }).json()
