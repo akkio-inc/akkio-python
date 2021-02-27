@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: akkio
-Version: 1.0.2
+Version: 1.0.3
 Summary: Convenient access to the Akkio API from python
 Home-page: https://github.com/akkio-inc/akkio-python
 Author: Abraham Parangi
@@ -9,11 +9,11 @@ License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/akkio-inc/akkio-python/issues
 Description: # akkio-python
         Convenient access to the Akkio API from python
-        ### Usage
+        ## Installation
         ```bash
         pip install akkio
         ```
-        
+        ## Usage
         ```python
         import akkio
         akkio.api_key = 'YOUR-API-KEY-HERE' # get your API key at https://app.akk.io/team-settings
@@ -42,7 +42,7 @@ Description: # akkio-python
         
         new_model = akkio.create_model(new_dataset['dataset_id'], ['y'], [], {'duration': 1})
         print(new_model)
-        prediction = akkio.make_prediction(new_model['model_id'], [{'x': 0.1}, {'x':0.7}])
+        prediction = akkio.make_prediction(new_model['model_id'], [{'x': 0.1}, {'x':0.7}], explain=True)
         print(prediction)
         ```
         
