@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+akkio/__init__.py
+akkio.egg-info/PKG-INFO
+akkio.egg-info/SOURCES.txt
+akkio.egg-info/dependency_links.txt
+akkio.egg-info/top_level.txt

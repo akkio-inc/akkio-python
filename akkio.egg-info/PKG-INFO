@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: akkio
+Version: 1.0.0
+Summary: Convenient access to the Akkio API from python
+Home-page: https://github.com/akkio-inc/akkio-python
+Author: Abraham Parangi
+Author-email: abe@akk.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/akkio-inc/akkio-python/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
