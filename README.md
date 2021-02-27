@@ -1,10 +1,10 @@
 # akkio-python
 Convenient access to the Akkio API from python
-### Usage
+## Installation
 ```bash
 pip install akkio
 ```
-
+## Usage
 ```python
 import akkio
 akkio.api_key = 'YOUR-API-KEY-HERE' # get your API key at https://app.akk.io/team-settings
