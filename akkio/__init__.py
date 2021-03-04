@@ -13,7 +13,7 @@ def get_models():
   }).json()
 
 def delete_model(id):
-  return requests.delete('{}://{}:{}/{}/models'.format(protocol, url, port, version), {
+  return requests.delete('{}://{}:{}/{}/models'.format(protocol, url, port, version), json={
     'api_key': api_key,
     'id': id
   }).json()
@@ -30,7 +30,7 @@ def create_dataset(name):
   }).json()
 
 def delete_dataset(id):
-  return requests.delete('{}://{}:{}/{}/datasets'.format(protocol, url, port, version), {
+  return requests.delete('{}://{}:{}/{}/datasets'.format(protocol, url, port, version), json={
     'api_key': api_key,
     'id': id
   }).json()
