@@ -1,5 +1,6 @@
 # akkio-python
-Convenient access to the Akkio API from python
+Convenient access to the [Akkio](https://www.akkio.com) API from python
+
 ## Installation
 ```bash
 pip install akkio
