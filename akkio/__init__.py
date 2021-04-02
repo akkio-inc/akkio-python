@@ -42,6 +42,13 @@ def add_rows_to_dataset(id, rows):
     'rows': rows
   }).json()
 
+def set_dataset_fields(id, fields):
+  return requests.post('{}://{}:{}/{}/datasets'.format(protocol, url, port, version), json={
+    'api_key': api_key,
+    'id': id,
+    'fields': fields
+  }).json()
+
 def parse_dataset(id):
   return requests.post('{}://{}:{}/{}/datasets'.format(protocol, url, port, version), json={
     'api_key': api_key,
