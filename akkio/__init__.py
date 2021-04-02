@@ -35,11 +35,12 @@ def delete_dataset(id):
     'id': id
   }).json()
 
-def add_rows_to_dataset(id, rows):
+def add_rows_to_dataset(id, rows, fields = None):
   return requests.post('{}://{}:{}/{}/datasets'.format(protocol, url, port, version), json={
     'api_key': api_key,
     'id': id,
-    'rows': rows
+    'rows': rows,
+    'fields': fields
   }).json()
 
 def parse_dataset(id):
